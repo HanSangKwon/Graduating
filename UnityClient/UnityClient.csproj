@@ -286,10 +286,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CurrentPosition.cs" />
-    <Compile Include="Assets\GameManager_.cs" />
-    <Compile Include="Assets\Player_.cs" />
-    <Compile Include="Assets\Yuch.cs" />
+    <Compile Include="Assets\Script\Intro\NextScene.cs" />
+    <Compile Include="Assets\Script\Play\CurrentPosition.cs" />
+    <Compile Include="Assets\Script\Play\GameManager_.cs" />
+    <Compile Include="Assets\Script\Play\Player_.cs" />
+    <Compile Include="Assets\Script\Play\Yuch.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
