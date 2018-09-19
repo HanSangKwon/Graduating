@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  testC++.cpp
+c:\users\admin\desktop\graduating\testc++\testc++\testc++.cpp(89): warning C4838: 'int'에서 'SHORT'(으)로의 변환에는 축소 변환이 필요합니다.
+  testC++.vcxproj -> C:\Users\admin\Desktop\Graduating\testC++\x64\Debug\testC++.exe
