@@ -1,0 +1,40 @@
+﻿  stdafx.cpp
+  ContentsProcess.cpp
+  ADODatabase.cpp
+  DBManager.cpp
+  Query.cpp
+  QueryRecord.cpp
+  QueryStatement.cpp
+  ASIOServer.cpp
+  ASIOSession.cpp
+  IOCPServer.cpp
+  IOCPSession.cpp
+  PacketAnalyzer.cpp
+  PacketObfuscation.cpp
+  Stream.cpp
+  Server.cpp
+  Session.cpp
+  SessionManager.cpp
+  SessionMonitor.cpp
+  Terminal.cpp
+  TerminalManager.cpp
+  TerminalSession.cpp
+  Shutdown.cpp
+  Assert.cpp
+  Clock.cpp
+  Config.cpp
+  csv_parser.cpp
+  Lock.cpp
+  Logger.cpp
+  Minidump.cpp
+  SMTPMail.cpp
+  Task.cpp
+  Thread.cpp
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1386,5): warning MSB8012: TargetPath(C:\Users\Han\Desktop\Graduating\Server\ServerCore\x64\Debug\ServerLibrary.lib)이(가) Library의 OutputFile 속성 값(C:\Users\Han\Desktop\Graduating\Server\Output\Debug\ServerLibrary\ServerLibrary.lib)과 일치하지 않습니다. 이로 인해 프로젝트가 잘못 빌드될 수 있습니다. 이를 수정하려면 $(OutDir), $(TargetName) 및 $(TargetExt) 속성 값이 %(Lib.OutputFile)에 지정된 값과 일치해야 합니다.
+ASIOSession.obj : warning LNK4221: 이 개체 파일은 이전에 정의되지 않은 공용 기호를 정의하지 않으므로 이 라이브러리를 사용하는 어떠한 링크 작업에도 사용되지 않습니다.
+ASIOServer.obj : warning LNK4221: 이 개체 파일은 이전에 정의되지 않은 공용 기호를 정의하지 않으므로 이 라이브러리를 사용하는 어떠한 링크 작업에도 사용되지 않습니다.
+  ServerLibrary.vcxproj -> C:\Users\Han\Desktop\Graduating\Server\ServerCore\x64\Debug\ServerLibrary.lib
