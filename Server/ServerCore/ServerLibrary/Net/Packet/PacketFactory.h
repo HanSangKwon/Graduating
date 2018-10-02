@@ -3,7 +3,7 @@
 #include "packetHeader.h"
 #include "packetClass.h"
 
-#define _packet_factory		PacketFactory::getInstance()
+#define _packet_factory  PacketFactory::getInstance()
 
 class PacketFactory : public Singleton<PacketFactory>
 {

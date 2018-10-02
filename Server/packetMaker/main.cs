@@ -10,12 +10,12 @@ namespace packetMaker
     class main
     {
         //프로젝트 놓은 디렉토리 설정
-        static string patch_ = "..//..//..//";
+        static string patch_ = "..\\..\\..\\";
         static string serverProjectName_ = "\\ServerCore\\ServerLibrary";
         static string serverProjectPath_ = patch_ + serverProjectName_ + "\\Net\\Packet";
 
-        static string clientProjectName_ = "\\DummyClient";
-        static string clientProjectPath_ = patch_ + clientProjectName_ + "\\DummyClient\\Source\\PacketGen";
+        static string clientProjectName_ = "..\\UnityClient";
+        static string clientProjectPath_ = patch_ + clientProjectName_ + "\\Assets\\Script\\TCP\\PacketGen";
 
         static string excelPath_ = patch_ + "\\packetMaker\\packetData.xlsx";
         static string dataSheet_ = "packetData";
