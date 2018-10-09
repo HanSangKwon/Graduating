@@ -6,20 +6,15 @@ namespace UnityGame
 {
     public class GameNetWork : MonoBehaviour
     {
-
         protected Network network_;
-        public string NickName;
-        private string loginIp_ = "127.0.0.1";
-        private uint loginPort_ = 9000;
+
+
 
         private void Start()
         {
             DontDestroyOnLoad(this);
             if (network_ == null)
                 network_ = new Network();
-
-            Open(loginIp_, loginPort_);
-
         }
 
         private void OnDestroy()
@@ -52,10 +47,6 @@ namespace UnityGame
             network_.close();
         }
 
-        public void RegistMyName(string name)
-        {
-            NickName = name;
-        }
 
         public void sendPacket(PacketInterface packet)
         {

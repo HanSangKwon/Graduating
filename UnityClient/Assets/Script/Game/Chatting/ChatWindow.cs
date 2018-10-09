@@ -16,13 +16,13 @@ namespace UnityGame
             get { return s_instance; }
         }
 
-        //받았는지 체크!
-        public bool ReciveFlag = false;
         //다른 유저의 아이디, 메세지.
         public string packet_name, packet_text;
         //내 아이디.
         private static string My_name;
         public void set_My_name(string name) { My_name = name; }
+    
+
 
         public int countMessage = 25;
         public GameObject chatPanel, textObject;
@@ -44,33 +44,27 @@ namespace UnityGame
         // Update is called once per frame
         void Update()
         {
-            if (IfText.text != "")
-            {
-                if (Input.GetKeyDown(KeyCode.Return))
-                {
-                    btnSend();
-                }
-            }
-            else
-            {
-                if (!IfText.isFocused && Input.GetKeyDown(KeyCode.Return))
-                    IfText.ActivateInputField();
-            }
-
-            // 데이터 받으면, 받은내용 출력하기.
-            if (ReciveFlag)
-            {
-                SendMessageToChat(packet_name + ": " + packet_text);
-                ReciveFlag = false;
-            }
+            //if (IfText.text != "")
+            //{
+                //if (Input.GetKeyDown(KeyCode.Return))
+                //{
+                //    btnSend();
+                //}
+            //}
+            //else
+            //{
+            //    if (!IfText.isFocused && Input.GetKeyDown(KeyCode.Return))
+            //        IfText.ActivateInputField();
+            //}
         }
 
         public void btnSend()
         {
+            Debug.Log("쓰기!!");
             PK_C_REQ_CHATTING packet = new PK_C_REQ_CHATTING();
             packet.text_ = IfText.text;
             GameObject.Find("ChattingNetWork").GetComponent<ChattingNetWork>().sendPacket(packet);
-            SendMessageToChat(My_name + ": " + IfText.text);
+            SendMessageToChat(IfText.text);
             IfText.text = "";
         }
 

@@ -220,10 +220,27 @@ public:
     }
 };
 
-class PK_C_REQ_REGIST_CHATTING_NAME : public Packet
+class PK_C_REQ_REGIST_NAME : public Packet
 {
 public:
-    PacketType type() { return E_C_REQ_REGIST_CHATTING_NAME; }
+    PacketType type() { return E_C_REQ_REGIST_NAME; }
+
+    std::string     name_;
+
+    void encode(Stream &stream) {
+        stream << (Int64) this->type();
+        stream << name_;
+    }
+
+    void decode(Stream &stream) {
+        stream >> &name_;
+    }
+};
+
+class PK_S_ANS_REGIST_NAME : public Packet
+{
+public:
+    PacketType type() { return E_S_ANS_REGIST_NAME; }
 
     std::string     name_;
 
@@ -271,6 +288,40 @@ public:
     void decode(Stream &stream) {
         stream >> &name_;
         stream >> &text_;
+    }
+};
+
+class PK_C_REQ_ENTER_GAME : public Packet
+{
+public:
+    PacketType type() { return E_C_REQ_ENTER_GAME; }
+
+    std::string     name_;
+
+    void encode(Stream &stream) {
+        stream << (Int64) this->type();
+        stream << name_;
+    }
+
+    void decode(Stream &stream) {
+        stream >> &name_;
+    }
+};
+
+class PK_S_ANS_ENTER_GAME : public Packet
+{
+public:
+    PacketType type() { return E_S_ANS_ENTER_GAME; }
+
+    std::string     name_;
+
+    void encode(Stream &stream) {
+        stream << (Int64) this->type();
+        stream << name_;
+    }
+
+    void decode(Stream &stream) {
+        stream >> &name_;
     }
 };
 

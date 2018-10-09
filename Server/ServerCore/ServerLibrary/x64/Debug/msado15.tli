@@ -1,9 +1,9 @@
-﻿// Created by Microsoft (R) C/C++ Compiler Version 14.13.26132.0 (f4a385f9).
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.14.26428.1 (7a536f1e).
 //
-// c:\users\admin\desktop\graduating\server\servercore\serverlibrary\x64\debug\msado15.tli
+// c:\users\han\desktop\graduating\server\servercore\serverlibrary\x64\debug\msado15.tli
 //
 // Wrapper implementations for type library c:\Program Files\Common Files\System\ADO\msado15.dll
-// compiler-generated file created 10/08/18 at 19:41:45 - DO NOT EDIT!
+// compiler-generated file created 10/09/18 at 19:56:16 - DO NOT EDIT!
 
 #pragma once
 

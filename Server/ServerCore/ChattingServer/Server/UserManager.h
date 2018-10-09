@@ -5,9 +5,12 @@ class Session;
 
 class UserManager : public Singleton < UserManager >
 {
-	unordered_map<oid_t, User*> userPool_;
 
 public:
+
+	//private로 옮기기.
+	unordered_map<oid_t, User*> userPool_;
+
 	void insert(User *user)
 	{
 		oid_t key = user->session()->id();
@@ -32,4 +35,5 @@ public:
 	{
 		return userPool_.size();
 	}
+
 };

@@ -13,6 +13,7 @@ void LoginProcess::registSubPacketFunc()
 	INSERT_PACKET_PROCESS(C_REQ_ID_PW);
 	INSERT_PACKET_PROCESS(I_DB_ANS_ID_PW);
 	INSERT_PACKET_PROCESS(I_LOGIN_NOTIFY_ID_LOADED);
+	INSERT_PACKET_PROCESS(C_REQ_ENTER_GAME);
 }
 
 //---------------------------------------------------------------//
@@ -80,4 +81,16 @@ void LoginProcess::I_LOGIN_NOTIFY_ID_LOADED(Session *session, Packet *rowPacket)
 
 	SLog(L"* loaded [%S] user name, from [%s]", ansPacket.name_.c_str(), session->clientAddress().c_str());
 	clientSession->sendPacket(&ansPacket);
+}
+
+
+void LoginProcess::C_REQ_ENTER_GAME(Session *session, Packet *rowPacket)
+{
+	PK_C_REQ_ENTER_GAME *packet = (PK_C_REQ_ENTER_GAME *)rowPacket;
+
+	PK_S_ANS_ENTER_GAME dbPacket;
+	dbPacket.name_ = packet->name_;
+
+	session->sendPacket(&dbPacket);
+
 }

@@ -1,7 +1,6 @@
 C:\Users\Han\Desktop\Graduating\Server\packetMaker\bin\Debug\packetMaker.exe.config
 C:\Users\Han\Desktop\Graduating\Server\packetMaker\bin\Debug\packetMaker.exe
 C:\Users\Han\Desktop\Graduating\Server\packetMaker\bin\Debug\packetMaker.pdb
-C:\Users\Han\Desktop\Graduating\Server\packetMaker\obj\Debug\packetMaker.csprojAssemblyReference.cache
 C:\Users\Han\Desktop\Graduating\Server\packetMaker\obj\Debug\packetMaker.csproj.CoreCompileInputs.cache
 C:\Users\Han\Desktop\Graduating\Server\packetMaker\obj\Debug\packetMaker.exe
 C:\Users\Han\Desktop\Graduating\Server\packetMaker\obj\Debug\packetMaker.pdb

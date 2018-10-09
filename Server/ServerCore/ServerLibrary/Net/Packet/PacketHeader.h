@@ -16,7 +16,10 @@ enum PacketType : Int64 {
     /*138*/    E_I_DB_REQ_LOAD_DATA = 138,
     /*139*/    E_I_DB_ANS_PARSE_DATA = 139,
     /*140*/    E_I_LOGIN_NOTIFY_ID_LOADED = 140,
-    /*141*/    E_C_REQ_REGIST_CHATTING_NAME = 141,
-    /*142*/    E_C_REQ_CHATTING = 142,
-    /*143*/    E_S_ANS_CHATTING = 143,
+    /*141*/    E_C_REQ_REGIST_NAME = 141,
+    /*142*/    E_S_ANS_REGIST_NAME = 142,
+    /*143*/    E_C_REQ_CHATTING = 143,
+    /*144*/    E_S_ANS_CHATTING = 144,
+    /*145*/    E_C_REQ_ENTER_GAME = 145,
+    /*146*/    E_S_ANS_ENTER_GAME = 146,
 };

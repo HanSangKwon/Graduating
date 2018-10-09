@@ -14,7 +14,7 @@ namespace UnityGame
         //HACK : 이곳 매직코드는 처음 접속하는
         //       로그인 서버 ip랑 port 번호임
         protected Network network_;
-        private string loginIp_ = "223.194.100.66";
+        private string loginIp_ = "127.0.0.1";
         private uint loginPort_ = 9000;
 
         LoginPacketProcess loginPacketProcess;
@@ -44,9 +44,6 @@ namespace UnityGame
         private void Update()
         {
 
-            //if (//GameObject.Find("ChattingNetWork").GetComponent<ChattingNetWork>().GetState() == NET_STATE.CONNECTED &&
-            //    GameObject.Find("GameNetWork").GetComponent<GameNetWork>().GetState() == NET_STATE.CONNECTED)
-            //    Destroy(this);
         }
 
 

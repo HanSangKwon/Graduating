@@ -24,9 +24,12 @@ public:
             case E_I_DB_REQ_LOAD_DATA:    return new PK_I_DB_REQ_LOAD_DATA();
             case E_I_DB_ANS_PARSE_DATA:    return new PK_I_DB_ANS_PARSE_DATA();
             case E_I_LOGIN_NOTIFY_ID_LOADED:    return new PK_I_LOGIN_NOTIFY_ID_LOADED();
-            case E_C_REQ_REGIST_CHATTING_NAME:    return new PK_C_REQ_REGIST_CHATTING_NAME();
+            case E_C_REQ_REGIST_NAME:    return new PK_C_REQ_REGIST_NAME();
+            case E_S_ANS_REGIST_NAME:    return new PK_S_ANS_REGIST_NAME();
             case E_C_REQ_CHATTING:    return new PK_C_REQ_CHATTING();
             case E_S_ANS_CHATTING:    return new PK_S_ANS_CHATTING();
+            case E_C_REQ_ENTER_GAME:    return new PK_C_REQ_ENTER_GAME();
+            case E_S_ANS_ENTER_GAME:    return new PK_S_ANS_ENTER_GAME();
         }
         return nullptr;
     }

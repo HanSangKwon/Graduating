@@ -1,0 +1,2 @@
+﻿  stdafx.cpp
+c:\users\admin\desktop\nglab2018_gitlab\nglab_game_server_framework\roseserver-master\servercore\gameserver\stdafx.h(14): fatal error C1083: 포함 파일을 열 수 없습니다. 'ServerLibrary.h': No such file or directory

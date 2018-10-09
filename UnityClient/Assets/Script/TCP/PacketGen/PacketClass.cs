@@ -285,10 +285,30 @@ namespace UnityGame
             return packet_;
         }
     }
-    public class PK_C_REQ_REGIST_CHATTING_NAME : PacketData, PacketInterface
+    public class PK_C_REQ_REGIST_NAME : PacketData, PacketInterface
     {
-        Int64 PacketInterface.type() { return (Int64) PacketType.E_C_REQ_REGIST_CHATTING_NAME; }
-        Int64 type() { return (Int64) PacketType.E_C_REQ_REGIST_CHATTING_NAME; }
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_C_REQ_REGIST_NAME; }
+        Int64 type() { return (Int64) PacketType.E_C_REQ_REGIST_NAME; }
+        public string         name_;
+
+        void PacketInterface.encode()
+        {
+            PacketUtil.encodeHeader(packet_, this.type());
+            PacketUtil.encode(packet_, name_);
+        }
+        void PacketInterface.decode(byte[] packet, ref int offset)
+        { 
+            name_ = PacketUtil.decodestring(packet, ref offset);
+        }
+        MemoryStream PacketInterface.getStream()
+        {
+            return packet_;
+        }
+    }
+    public class PK_S_ANS_REGIST_NAME : PacketData, PacketInterface
+    {
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_S_ANS_REGIST_NAME; }
+        Int64 type() { return (Int64) PacketType.E_S_ANS_REGIST_NAME; }
         public string         name_;
 
         void PacketInterface.encode()
@@ -342,6 +362,46 @@ namespace UnityGame
         { 
             name_ = PacketUtil.decodestring(packet, ref offset);
             text_ = PacketUtil.decodestring(packet, ref offset);
+        }
+        MemoryStream PacketInterface.getStream()
+        {
+            return packet_;
+        }
+    }
+    public class PK_C_REQ_ENTER_GAME : PacketData, PacketInterface
+    {
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_C_REQ_ENTER_GAME; }
+        Int64 type() { return (Int64) PacketType.E_C_REQ_ENTER_GAME; }
+        public string         name_;
+
+        void PacketInterface.encode()
+        {
+            PacketUtil.encodeHeader(packet_, this.type());
+            PacketUtil.encode(packet_, name_);
+        }
+        void PacketInterface.decode(byte[] packet, ref int offset)
+        { 
+            name_ = PacketUtil.decodestring(packet, ref offset);
+        }
+        MemoryStream PacketInterface.getStream()
+        {
+            return packet_;
+        }
+    }
+    public class PK_S_ANS_ENTER_GAME : PacketData, PacketInterface
+    {
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_S_ANS_ENTER_GAME; }
+        Int64 type() { return (Int64) PacketType.E_S_ANS_ENTER_GAME; }
+        public string         name_;
+
+        void PacketInterface.encode()
+        {
+            PacketUtil.encodeHeader(packet_, this.type());
+            PacketUtil.encode(packet_, name_);
+        }
+        void PacketInterface.decode(byte[] packet, ref int offset)
+        { 
+            name_ = PacketUtil.decodestring(packet, ref offset);
         }
         MemoryStream PacketInterface.getStream()
         {

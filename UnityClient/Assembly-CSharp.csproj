@@ -51,7 +51,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scene_.cs" />
      <Compile Include="Assets\Script\Game.cs" />
+     <Compile Include="Assets\Script\Game\Chatting\ChatWindow.cs" />
+     <Compile Include="Assets\Script\TCP\Chatting\ChattingContents.cs" />
+     <Compile Include="Assets\Script\TCP\Chatting\ChattingNetWork.cs" />
+     <Compile Include="Assets\Script\TCP\Chatting\ChattingPacketProcess.cs" />
+     <Compile Include="Assets\Script\TCP\ContentsProcess.cs" />
+     <Compile Include="Assets\Script\TCP\GameServer\GameContents.cs" />
+     <Compile Include="Assets\Script\TCP\GameServer\GameNetWork.cs" />
+     <Compile Include="Assets\Script\TCP\GameServer\GamePacketProcess.cs" />
+     <Compile Include="Assets\Script\TCP\Login\LoginContents.cs" />
+     <Compile Include="Assets\Script\TCP\Login\LoginNetWork.cs" />
+     <Compile Include="Assets\Script\TCP\Login\LoginPacketProcess.cs" />
+     <Compile Include="Assets\Script\TCP\Network\Network.cs" />
+     <Compile Include="Assets\Script\TCP\Network\Packet.cs" />
+     <Compile Include="Assets\Script\TCP\Network\PacketObfuscation.cs" />
+     <Compile Include="Assets\Script\TCP\Network\PacketUtil.cs" />
+     <Compile Include="Assets\Script\TCP\PacketGen\PacketClass.cs" />
+     <Compile Include="Assets\Script\TCP\PacketGen\PacketFactory.cs" />
+     <Compile Include="Assets\Script\TCP\PacketGen\PacketHeader.cs" />
+     <Compile Include="Assets\Script\TCP\PacketProcess.cs" />
+     <Compile Include="Assets\Script\TCP\SceneManager_.cs" />
      <Compile Include="Assets\Script\Tetromino.cs" />
      <None Include="Assets\Resources\Materials\Custom_Shader.shader" />
  <Reference Include="UnityEngine.UI">

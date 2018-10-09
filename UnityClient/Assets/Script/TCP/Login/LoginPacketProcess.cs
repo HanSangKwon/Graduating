@@ -21,22 +21,16 @@ namespace UnityGame
             PacketType type = (PacketType)packet.type();
 
             Debug.Log("받은 로그인 패킷" + type);
-            //switch (type)
-            //{
-            //    case PacketType.E_S_ANS_ID_PW_FAIL:
-            //        contents_.S_ANS_ID_PW_FAIL(packet);
-            //        return;
-            //    case PacketType.E_S_ANS_ID_PW_SUCCESS_CHATTING:
-            //        contents_.S_ANS_ID_PW_SUCCESS_CHATTING(packet);
-            //        return;
-            //    case PacketType.E_S_ANS_ID_PW_SUCCESS_GAME:
-            //        contents_.S_ANS_ID_PW_SUCCESS_GAME(packet);
-            //        return;
+            switch (type)
+            {
+                case PacketType.E_S_ANS_ENTER_GAME:
+                    contents_.S_ANS_ENTER_GAME(packet);
+                    return;
 
-            //    case PacketType.E_S_ANS_EXIT:
-            //        return;
+                case PacketType.E_S_ANS_EXIT:
+                    return;
 
-            //}
+            }
             if (base.defaultRun(packet) == false)
             {
 #if DEBUG

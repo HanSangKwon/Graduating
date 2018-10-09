@@ -20,7 +20,7 @@ namespace UnityGame
     {
         private NetworkStream stream_;
 
-        //private Thread heartBeatWorker_;
+        private Thread heartBeatWorker_;
 
         private TcpClient client_;
         private NET_STATE state_;
@@ -65,9 +65,9 @@ namespace UnityGame
             state_ = NET_STATE.CONNECTED;
 
             stream_ = client_.GetStream();
-            
-            //heartBeatWorker_ = new Thread(new ThreadStart(heartBeat));
-            //heartBeatWorker_.Start();
+
+            heartBeatWorker_ = new Thread(new ThreadStart(heartBeat));
+            heartBeatWorker_.Start();
             return true;
         }
 
@@ -141,14 +141,14 @@ namespace UnityGame
             }
         }
 
-        //private void heartBeat()
-        //{
-        //    while (this.isConnected())
-        //    {
-        //        PK_C_NOTIFY_HEARTBEAT heartBeatPacket = new PK_C_NOTIFY_HEARTBEAT();
-        //        this.sendPacket(heartBeatPacket);
-        //        Thread.Sleep(1000);
-        //    }
-        //}
+        private void heartBeat()
+        {
+            while (this.isConnected())
+            {
+                PK_C_NOTIFY_HEARTBEAT heartBeatPacket = new PK_C_NOTIFY_HEARTBEAT();
+                this.sendPacket(heartBeatPacket);
+                Thread.Sleep(1000);
+            }
+        }
     }
 }
