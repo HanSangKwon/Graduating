@@ -23,13 +23,13 @@
   Assert.cpp
   Clock.cpp
   Config.cpp
+  csv_parser.cpp
   Lock.cpp
   Logger.cpp
   Minidump.cpp
   SMTPMail.cpp
   Task.cpp
   Thread.cpp
-  csv_parser.cpp
   tinystr.cpp
   tinyxml.cpp
   tinyxmlerror.cpp

@@ -11,3 +11,4 @@ C:\Users\admin\Desktop\Graduating\Server\packetMaker\bin\Debug\packetMaker.pdb
 C:\Users\admin\Desktop\Graduating\Server\packetMaker\obj\Debug\packetMaker.csproj.CoreCompileInputs.cache
 C:\Users\admin\Desktop\Graduating\Server\packetMaker\obj\Debug\packetMaker.exe
 C:\Users\admin\Desktop\Graduating\Server\packetMaker\obj\Debug\packetMaker.pdb
+C:\Users\admin\Desktop\Graduating\Server\packetMaker\obj\Debug\packetMaker.csprojResolveAssemblyReference.cache
