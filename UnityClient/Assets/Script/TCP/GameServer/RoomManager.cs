@@ -44,8 +44,8 @@ public class RoomManager : MonoBehaviour {
         }
 
         //삭제
-        Destroy(UserList.Find( ) );
-        UserList.Remove(Target);
+        //Destroy(UserList.Find( ) );
+        //UserList.Remove(Target);
     
     }
 

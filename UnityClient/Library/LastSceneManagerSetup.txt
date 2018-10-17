@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Roby.unity
+- path: Assets/Tetris Template/Scenes/GamePlay.unity
   isLoaded: 1
   isActive: 1
