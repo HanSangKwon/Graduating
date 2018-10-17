@@ -24,6 +24,34 @@ public:
 
 };
 
+class PK_C_REQ_CHAT_EXIT : public Packet
+{
+public:
+    PacketType type() { return E_C_REQ_CHAT_EXIT; }
+
+};
+
+class PK_S_ANS_CHATEXIT : public Packet
+{
+public:
+    PacketType type() { return E_S_ANS_CHATEXIT; }
+
+};
+
+class PK_C_REQ_GAME_EXIT : public Packet
+{
+public:
+    PacketType type() { return E_C_REQ_GAME_EXIT; }
+
+};
+
+class PK_S_ANS_GAME_EXIT : public Packet
+{
+public:
+    PacketType type() { return E_S_ANS_GAME_EXIT; }
+
+};
+
 class PK_I_NOTIFY_TERMINAL : public Packet
 {
 public:

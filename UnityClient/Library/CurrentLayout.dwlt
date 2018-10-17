@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 9
+  controlID: 89
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 10
+  controlID: 32
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,8 +154,8 @@ MonoBehaviour:
     y: 0
     width: 204
     height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -204,8 +204,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -230,8 +230,8 @@ MonoBehaviour:
     y: 0
     width: 1205
     height: 393
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -255,8 +255,8 @@ MonoBehaviour:
     y: 393
     width: 1205
     height: 554
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -318,20 +318,20 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8c2d0000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: aa15f7ff5219f7fffac5f7ff5cc8f7ffd0c9f7ff3c01f8ff5202f8ff7803f8ff4607f8ffa625faffce25faffd425faff1675faff3c76faff6e77faff1c84faffec84faff8088faff9088faff9888faffb097faff8098faff149cfaff249cfaff2c9cfaff4aa8faff1aa9faffaeacfaffbeacfaffc6acfaff70bafaff40bbfaffd4befaffe4befaffecbefaff0ac9faffdac9faff6ecdfaff7ecdfaff86cdfaff80eafaff50ebfaffe8eefafffceefaff08effaff6a03fbff522efdff903ffdff5e41fdffa045fdffc646fdfffc47fdff76ecfeff005affff6edcffffc6e4fffff4ffffff00000000784100008c41000096410000a8410000326e0000c8740000
+    m_ExpandedIDs: 12d1feff2c91fffffc91ffff9295ffffa495ffffae95ffff18a1ffffe8a1ffff7ea5ffff90a5ffff9aa5ffff82acffff52adffffecb0ffff02b1ffff12b1ffff22b8fffff6bdffffc4beffff5ac2ffff5ec2ffff72c2ffffb2cbffff80ccffff16d0ffff1ad0ffff2ed0ffff42e0ffff12e1ffffa8e4fffface4ffffc0e4ffffaef7ffff9efbffff00000000fa2a0000c4790000e07900001a7a0000367a00007c7a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Main Camera
-      m_OriginalName: Main Camera
+      m_Name: Viewport
+      m_OriginalName: Viewport
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 30666
+      m_UserData: 31304
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -339,7 +339,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
   m_ExpandedScenes:
-  - Intro
+  - Roby
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -416,19 +416,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scene
+    - Assets/Resources/Prefab
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scene
+  - Assets/Resources/Prefab
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: C:\Users\Han\Desktop\Graduating\UnityClient
+  m_LastProjectPath: C:\Users\admin\Desktop\Graduating\UnityClient
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 682d0000
-    m_LastClickedID: 11624
-    m_ExpandedIDs: 00000000522d0000562d0000662d00006c2d00006e2d0000842d0000b82d00002e2e0000302e0000322e000000ca9a3bffffff7f
+    m_SelectedIDs: a0270000
+    m_LastClickedID: 10144
+    m_ExpandedIDs: 0000000092270000a0270000b4270000ba270000bc270000dc270000c8280000c6290000c8290000ca29000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -456,7 +456,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000522d0000562d0000662d00006c2d00006e2d0000842d0000b82d00002e2e0000302e0000322e0000
+    m_ExpandedIDs: 0000000092270000a0270000b4270000ba270000bc270000dc270000c8280000c6290000c8290000ca290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -487,18 +487,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: ac380000a0a5f8ffca2a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Scene
-      m_OriginalName: Scene
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 11624
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
@@ -616,14 +616,14 @@ MonoBehaviour:
     height: 372
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 41058.65034932802
+  lastFramingTime: 270356.24577592994
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -9.318473, y: 2.1804318, z: -10.206144}
+    m_Target: {x: 891.5228, y: 161.44998, z: 0}
     speed: 2
-    m_Value: {x: -9.318473, y: 2.1804318, z: -10.206144}
+    m_Value: {x: 891.5228, y: 161.44998, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -651,9 +651,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 42.57622
+    m_Target: 579.8265
     speed: 2
-    m_Value: 42.57622
+    m_Value: 579.8265
   m_Ortho:
     m_Target: 1
     speed: 2

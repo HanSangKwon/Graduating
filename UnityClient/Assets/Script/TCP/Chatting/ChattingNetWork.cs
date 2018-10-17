@@ -8,18 +8,18 @@ namespace UnityGame
     public class ChattingNetWork : MonoBehaviour
     {
         protected Network network_;
-        public string NickName;
 
         private void Start()
         {
             DontDestroyOnLoad(this);
             if (network_ == null)
                 network_ = new Network();
-
         }
 
         private void OnDestroy()
         {
+            PK_C_REQ_CHAT_EXIT packet = new PK_C_REQ_CHAT_EXIT();
+            sendPacket(packet);
             disconnect();
         }
 

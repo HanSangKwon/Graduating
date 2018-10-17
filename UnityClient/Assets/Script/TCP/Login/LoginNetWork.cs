@@ -17,6 +17,12 @@ namespace UnityGame
         private string loginIp_ = "127.0.0.1";
         private uint loginPort_ = 9000;
 
+
+        private static string My_name;
+        public void set_My_name(string name) { My_name = name; }
+        public string get_My_name(){return My_name;}
+
+
         LoginPacketProcess loginPacketProcess;
 
 

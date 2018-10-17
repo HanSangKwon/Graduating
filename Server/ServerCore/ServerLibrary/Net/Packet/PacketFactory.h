@@ -13,6 +13,10 @@ public:
         switch (packetType) {
             case E_C_REQ_EXIT:    return new PK_C_REQ_EXIT();
             case E_S_ANS_EXIT:    return new PK_S_ANS_EXIT();
+            case E_C_REQ_CHAT_EXIT:    return new PK_C_REQ_CHAT_EXIT();
+            case E_S_ANS_CHATEXIT:    return new PK_S_ANS_CHATEXIT();
+            case E_C_REQ_GAME_EXIT:    return new PK_C_REQ_GAME_EXIT();
+            case E_S_ANS_GAME_EXIT:    return new PK_S_ANS_GAME_EXIT();
             case E_I_NOTIFY_TERMINAL:    return new PK_I_NOTIFY_TERMINAL();
             case E_C_NOTIFY_HEARTBEAT:    return new PK_C_NOTIFY_HEARTBEAT();
             case E_C_REQ_ID_PW:    return new PK_C_REQ_ID_PW();

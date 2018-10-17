@@ -19,6 +19,8 @@ namespace UnityGame
 
         private void OnDestroy()
         {
+            PK_C_REQ_GAME_EXIT packet = new PK_C_REQ_GAME_EXIT();
+            sendPacket(packet);
             disconnect();
         }
 

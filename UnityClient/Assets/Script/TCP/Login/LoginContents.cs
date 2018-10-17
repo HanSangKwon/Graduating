@@ -28,8 +28,8 @@ namespace UnityGame
             packet_.name_ = packet.name_;
 
             GameObject.Find("ChattingNetWork").GetComponent<ChattingNetWork>().sendPacket(packet_);
-            //GameObject.Find("GameNetWork").GetComponent<GameNetWork>().
 
+            GameObject.Find("LoginNetWork").GetComponent<LoginNetWork>().set_My_name(packet_.name_);
             GameObject.Find("LoginNetWork").GetComponent<LoginNetWork>().disconnect();
             //로비로 이동!
             SceneManager.LoadScene(1);

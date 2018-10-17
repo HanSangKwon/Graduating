@@ -155,8 +155,8 @@ DWORD WINAPI IOCPServer::workerThread(LPVOID serverPtr)
 			return 0;
 		}
 		if (transferSize == 0) {
-			SLog(L"* close by client[%d][%s]", session->id(), session->clientAddress().c_str());
-			_session_manager.closeSession(session);
+			SLog(L"* Send byte 0 by client[%d][%s]", session->id(), session->clientAddress().c_str());
+			//_session_manager.closeSession(session);
 			continue;
 		}
 

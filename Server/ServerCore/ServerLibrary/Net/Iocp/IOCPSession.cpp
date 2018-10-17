@@ -208,6 +208,12 @@ Package *IOCPSession::onRecv(size_t transferSize)
 		return nullptr;
 	}
 
+	if (packet->type() == 130)
+	{
+		SLog(L" <E_C_REQ_CHAT_EXIT> : %s" , ioData_[IO_READ].data());		
+	}
+
+
 	this->recvStandBy();
 
 	Package *package = new Package(this, packet);

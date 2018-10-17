@@ -14,6 +14,10 @@ namespace UnityGame
             {
                 case PacketType.E_C_REQ_EXIT:    return new PK_C_REQ_EXIT();
                 case PacketType.E_S_ANS_EXIT:    return new PK_S_ANS_EXIT();
+                case PacketType.E_C_REQ_CHAT_EXIT:    return new PK_C_REQ_CHAT_EXIT();
+                case PacketType.E_S_ANS_CHATEXIT:    return new PK_S_ANS_CHATEXIT();
+                case PacketType.E_C_REQ_GAME_EXIT:    return new PK_C_REQ_GAME_EXIT();
+                case PacketType.E_S_ANS_GAME_EXIT:    return new PK_S_ANS_GAME_EXIT();
                 case PacketType.E_I_NOTIFY_TERMINAL:    return new PK_I_NOTIFY_TERMINAL();
                 case PacketType.E_C_NOTIFY_HEARTBEAT:    return new PK_C_NOTIFY_HEARTBEAT();
                 case PacketType.E_C_REQ_ID_PW:    return new PK_C_REQ_ID_PW();

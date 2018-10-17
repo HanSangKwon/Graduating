@@ -12,7 +12,7 @@ void GameProcess::registSubPacketFunc()
 
 	// Enum 패킷에  Packet 타입과 GameProcess 의 함수를 매핑 map에 넣는다.
 
-	INSERT_PACKET_PROCESS(C_REQ_EXIT); // TODO + PacketData  in -> Position
+	INSERT_PACKET_PROCESS(C_REQ_GAME_EXIT); // TODO + PacketData  in -> Position
 
 }
 
@@ -20,7 +20,7 @@ void GameProcess::registSubPacketFunc()
 //패킷 처리 정의
 
 
-void GameProcess::C_REQ_EXIT(Session *session, Packet *rowPacket)
+void GameProcess::C_REQ_GAME_EXIT(Session *session, Packet *rowPacket)
 {
 
 }

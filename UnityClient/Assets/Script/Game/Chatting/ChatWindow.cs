@@ -19,7 +19,7 @@ namespace UnityGame
         //다른 유저의 아이디, 메세지.
         public string packet_name, packet_text;
         //내 아이디.
-        private static string My_name;
+        private string My_name;
         public void set_My_name(string name) { My_name = name; }
     
 
@@ -38,24 +38,24 @@ namespace UnityGame
                 Destroy(this.gameObject);
             s_instance = this;
             DontDestroyOnLoad(this);
-            set_My_name(GameObject.Find("ChattingNetWork").GetComponent<ChattingNetWork>().NickName);
+            set_My_name(GameObject.Find("LoginNetWork").GetComponent<LoginNetWork>().get_My_name() );
         }
 
         // Update is called once per frame
         void Update()
         {
-            //if (IfText.text != "")
-            //{
-                //if (Input.GetKeyDown(KeyCode.Return))
-                //{
-                //    btnSend();
-                //}
-            //}
-            //else
-            //{
-            //    if (!IfText.isFocused && Input.GetKeyDown(KeyCode.Return))
-            //        IfText.ActivateInputField();
-            //}
+            if (IfText.text != "")
+            {
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    btnSend();
+                }
+            }
+            else
+            {
+                if (!IfText.isFocused && Input.GetKeyDown(KeyCode.Return))
+                    IfText.ActivateInputField();
+            }
         }
 
         public void btnSend()
@@ -64,7 +64,7 @@ namespace UnityGame
             PK_C_REQ_CHATTING packet = new PK_C_REQ_CHATTING();
             packet.text_ = IfText.text;
             GameObject.Find("ChattingNetWork").GetComponent<ChattingNetWork>().sendPacket(packet);
-            SendMessageToChat(IfText.text);
+            SendMessageToChat(My_name + " : " +IfText.text);
             IfText.text = "";
         }
 

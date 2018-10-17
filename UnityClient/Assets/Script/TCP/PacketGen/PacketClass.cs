@@ -38,6 +38,70 @@ namespace UnityGame
             return packet_;
         }
     }
+    public class PK_C_REQ_CHAT_EXIT : PacketData, PacketInterface
+    {
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_C_REQ_CHAT_EXIT; }
+        Int64 type() { return (Int64) PacketType.E_C_REQ_CHAT_EXIT; }
+        void PacketInterface.encode()
+        {
+            PacketUtil.encodeHeader(packet_, this.type());
+        }
+        void PacketInterface.decode(byte[] packet, ref int offset)
+        { 
+        }
+        MemoryStream PacketInterface.getStream()
+        {
+            return packet_;
+        }
+    }
+    public class PK_S_ANS_CHATEXIT : PacketData, PacketInterface
+    {
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_S_ANS_CHATEXIT; }
+        Int64 type() { return (Int64) PacketType.E_S_ANS_CHATEXIT; }
+        void PacketInterface.encode()
+        {
+            PacketUtil.encodeHeader(packet_, this.type());
+        }
+        void PacketInterface.decode(byte[] packet, ref int offset)
+        { 
+        }
+        MemoryStream PacketInterface.getStream()
+        {
+            return packet_;
+        }
+    }
+    public class PK_C_REQ_GAME_EXIT : PacketData, PacketInterface
+    {
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_C_REQ_GAME_EXIT; }
+        Int64 type() { return (Int64) PacketType.E_C_REQ_GAME_EXIT; }
+        void PacketInterface.encode()
+        {
+            PacketUtil.encodeHeader(packet_, this.type());
+        }
+        void PacketInterface.decode(byte[] packet, ref int offset)
+        { 
+        }
+        MemoryStream PacketInterface.getStream()
+        {
+            return packet_;
+        }
+    }
+    public class PK_S_ANS_GAME_EXIT : PacketData, PacketInterface
+    {
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_S_ANS_GAME_EXIT; }
+        Int64 type() { return (Int64) PacketType.E_S_ANS_GAME_EXIT; }
+        void PacketInterface.encode()
+        {
+            PacketUtil.encodeHeader(packet_, this.type());
+        }
+        void PacketInterface.decode(byte[] packet, ref int offset)
+        { 
+        }
+        MemoryStream PacketInterface.getStream()
+        {
+            return packet_;
+        }
+    }
     public class PK_I_NOTIFY_TERMINAL : PacketData, PacketInterface
     {
         Int64 PacketInterface.type() { return (Int64) PacketType.E_I_NOTIFY_TERMINAL; }

@@ -11,6 +11,6 @@ public:
 private:
 	void registSubPacketFunc();
 
-	static void C_REQ_EXIT(Session *session, Packet *rowPacket);
+	static void C_REQ_GAME_EXIT(Session *session, Packet *rowPacket);
 
 };
