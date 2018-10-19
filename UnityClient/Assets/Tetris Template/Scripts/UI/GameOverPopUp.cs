@@ -31,5 +31,6 @@ public class GameOverPopUp : MonoBehaviour {
         Managers.UI.panel.SetActive(false);
         Managers.Game.SetState(typeof(MenuState));
         gameObject.SetActive(false);
+
     }
 }

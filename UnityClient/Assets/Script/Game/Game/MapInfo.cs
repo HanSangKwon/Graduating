@@ -17,4 +17,5 @@ public class MapInfo : MonoBehaviour {
 	void Update () {
 		
 	}
+
 }
