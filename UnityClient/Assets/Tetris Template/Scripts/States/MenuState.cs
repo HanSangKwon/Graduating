@@ -17,12 +17,12 @@ public class MenuState : _StatesBase {
 
 	public override void OnDeactivate ()
 	{
-		//Debug.Log ("<color=red>Menu State</color> OnDeactivate");
+		Debug.Log ("<color=red>Menu State</color> OnDeactivate");
 	}
 
 	public override void OnUpdate ()
 	{
-		//Debug.Log ("<color=yellow>Menu State</color> OnUpdate");
+		Debug.Log ("<color=yellow>Menu State</color> OnUpdate");
 	}
 
 	#endregion

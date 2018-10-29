@@ -25,7 +25,7 @@ public class GamePlayState : _StatesBase {
 	{
         if(Managers.Game.currentShape!=null)
             Managers.Game.currentShape.movementController.ShapeUpdate();
-		//Debug.Log ("<color=yellow>Gameplay State</color> OnUpdate");
+		Debug.Log ("<color=yellow>Gameplay State</color> OnUpdate");
 	}
 	#endregion
 

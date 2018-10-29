@@ -43,6 +43,5 @@ public class TetrisShape : MonoBehaviour
         Color temp = Managers.Palette.TurnRandomColorFromTheme();
         foreach (SpriteRenderer renderer in GetComponentsInChildren<SpriteRenderer>().ToList())
             renderer.color = temp;
-        
     }
 }

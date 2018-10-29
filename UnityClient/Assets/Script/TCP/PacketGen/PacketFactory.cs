@@ -35,8 +35,6 @@ namespace UnityGame
                 case PacketType.E_S_ANS_CHATTING:    return new PK_S_ANS_CHATTING();
                 case PacketType.E_C_REQ_ENTER_GAME:    return new PK_C_REQ_ENTER_GAME();
                 case PacketType.E_S_ANS_ENTER_GAME:    return new PK_S_ANS_ENTER_GAME();
-                case PacketType.E_C_REQ_INTO_ROOM:    return new PK_C_REQ_INTO_ROOM();
-                case PacketType.E_S_ANS_INTO_ROOM:    return new PK_S_ANS_INTO_ROOM();
             }
             return null;
         }
