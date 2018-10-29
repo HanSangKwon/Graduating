@@ -2,19 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapInfo : MonoBehaviour {
+
+namespace UnityGame
+{
+    public class MapInfo : MonoBehaviour
+    {
 
 
-    int [,] gridMap = new int[10 , 16] ;
+        int[,] gridMap = new int[10, 16];
 
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        // Use this for initialization
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+    }
 }

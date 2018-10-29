@@ -34,6 +34,8 @@ public:
             case E_S_ANS_CHATTING:    return new PK_S_ANS_CHATTING();
             case E_C_REQ_ENTER_GAME:    return new PK_C_REQ_ENTER_GAME();
             case E_S_ANS_ENTER_GAME:    return new PK_S_ANS_ENTER_GAME();
+            case E_C_REQ_INTO_ROOM:    return new PK_C_REQ_INTO_ROOM();
+            case E_S_ANS_INTO_ROOM:    return new PK_S_ANS_INTO_ROOM();
         }
         return nullptr;
     }

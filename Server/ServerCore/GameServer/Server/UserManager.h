@@ -28,6 +28,15 @@ public:
 		return itr->second;
 	}
 
+	User* Find(oid_t id)
+	{
+		auto itr = userPool_.find(id);
+		if (itr == userPool_.end()) {
+			return nullptr;
+		}
+		return itr->second;
+	}
+
 	size_t size()
 	{
 		return userPool_.size();

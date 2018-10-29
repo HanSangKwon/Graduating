@@ -24,6 +24,11 @@ public class GridManager : MonoBehaviour
     //충돌체크
     public Column[] gameGridcol = new Column[10];
 
+
+    public int[ , ] gridMap = new int[10 , 20];
+
+
+
     public bool InsideBorder(Vector2 pos)
     {
         return ((int)pos.x >= 0 && (int)pos.x < 10 && (int)pos.y >= 0);
@@ -135,7 +140,13 @@ public class GridManager : MonoBehaviour
                 {
                     if (gameGridcol[x].row[y].parent == obj)
                         gameGridcol[x].row[y] = null;
+                    gridMap[x, y] = 1;
                 }
+                else
+                    gridMap[x, y] = 0;
+
+                Debug.Log(x + " " + y + " " + gridMap[x, y]);
+
             }
         }
 
@@ -145,6 +156,7 @@ public class GridManager : MonoBehaviour
             {
                 Vector2 v = Vector2Extension.roundVec2(child.position);
                 gameGridcol[(int)v.x].row[(int)v.y] = child;
+
             }
         }
     }

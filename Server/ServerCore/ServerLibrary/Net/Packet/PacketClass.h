@@ -353,4 +353,38 @@ public:
     }
 };
 
+class PK_C_REQ_INTO_ROOM : public Packet
+{
+public:
+    PacketType type() { return E_C_REQ_INTO_ROOM; }
+
+    UInt64     roomNum;
+
+    void encode(Stream &stream) {
+        stream << (Int64) this->type();
+        stream << roomNum;
+    }
+
+    void decode(Stream &stream) {
+        stream >> &roomNum;
+    }
+};
+
+class PK_S_ANS_INTO_ROOM : public Packet
+{
+public:
+    PacketType type() { return E_S_ANS_INTO_ROOM; }
+
+    UInt64     roomNum;
+
+    void encode(Stream &stream) {
+        stream << (Int64) this->type();
+        stream << roomNum;
+    }
+
+    void decode(Stream &stream) {
+        stream >> &roomNum;
+    }
+};
+
 

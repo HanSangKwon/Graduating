@@ -21,6 +21,7 @@ namespace UnityGame
             PK_S_ANS_ENTER_GAME packet = (PK_S_ANS_ENTER_GAME)rowPacket;
             //수정!!!  데베 연결이 끝나면 아이피 포트 서버에서 받아오기. 
             GameObject.Find("GameNetWork").GetComponent<GameNetWork>().Open("127.0.0.1", 9200 );
+            
             GameObject.Find("ChattingNetWork").GetComponent<ChattingNetWork>().Open("127.0.0.1", 9100);
 
 
@@ -28,6 +29,7 @@ namespace UnityGame
             packet_.name_ = packet.name_;
 
             GameObject.Find("ChattingNetWork").GetComponent<ChattingNetWork>().sendPacket(packet_);
+            GameObject.Find("GameNetWork").GetComponent<GameNetWork>().sendPacket(packet_);
 
             GameObject.Find("LoginNetWork").GetComponent<LoginNetWork>().set_My_name(packet_.name_);
             GameObject.Find("LoginNetWork").GetComponent<LoginNetWork>().disconnect();

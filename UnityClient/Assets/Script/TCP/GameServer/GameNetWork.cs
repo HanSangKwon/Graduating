@@ -8,8 +8,6 @@ namespace UnityGame
     {
         protected Network network_;
 
-
-
         private void Start()
         {
             DontDestroyOnLoad(this);
@@ -26,6 +24,7 @@ namespace UnityGame
 
         public bool connectToServer(string ip, uint port)
         {
+            Debug.Log("asda");
             return network_.connect(ip, port);
         }
 

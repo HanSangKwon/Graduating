@@ -37,5 +37,7 @@ namespace UnityGame
     /*148*/    E_S_ANS_CHATTING = 148,
     /*149*/    E_C_REQ_ENTER_GAME = 149,
     /*150*/    E_S_ANS_ENTER_GAME = 150,
+    /*151*/    E_C_REQ_INTO_ROOM = 151,
+    /*152*/    E_S_ANS_INTO_ROOM = 152,
      }
 };

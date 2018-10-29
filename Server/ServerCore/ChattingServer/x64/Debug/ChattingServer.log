@@ -1,1 +1,4 @@
-﻿  ChattingServer.vcxproj -> C:\Users\admin\Desktop\Graduating\Server\ServerCore\x64\Debug\ChattingServer.exe
+﻿  stdafx.cpp
+  ChattingServer.cpp
+  ChattingProcess.cpp
+  ChattingServer.vcxproj -> C:\Users\Han\Desktop\Graduating\Server\ServerCore\x64\Debug\ChattingServer.exe

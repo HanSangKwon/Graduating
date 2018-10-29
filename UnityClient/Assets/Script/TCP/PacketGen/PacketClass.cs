@@ -472,4 +472,44 @@ namespace UnityGame
             return packet_;
         }
     }
+    public class PK_C_REQ_INTO_ROOM : PacketData, PacketInterface
+    {
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_C_REQ_INTO_ROOM; }
+        Int64 type() { return (Int64) PacketType.E_C_REQ_INTO_ROOM; }
+        public UInt64         roomNum;
+
+        void PacketInterface.encode()
+        {
+            PacketUtil.encodeHeader(packet_, this.type());
+            PacketUtil.encode(packet_, roomNum);
+        }
+        void PacketInterface.decode(byte[] packet, ref int offset)
+        { 
+            roomNum = PacketUtil.decodeUInt64(packet, ref offset);
+        }
+        MemoryStream PacketInterface.getStream()
+        {
+            return packet_;
+        }
+    }
+    public class PK_S_ANS_INTO_ROOM : PacketData, PacketInterface
+    {
+        Int64 PacketInterface.type() { return (Int64) PacketType.E_S_ANS_INTO_ROOM; }
+        Int64 type() { return (Int64) PacketType.E_S_ANS_INTO_ROOM; }
+        public UInt64         roomNum;
+
+        void PacketInterface.encode()
+        {
+            PacketUtil.encodeHeader(packet_, this.type());
+            PacketUtil.encode(packet_, roomNum);
+        }
+        void PacketInterface.decode(byte[] packet, ref int offset)
+        { 
+            roomNum = PacketUtil.decodeUInt64(packet, ref offset);
+        }
+        MemoryStream PacketInterface.getStream()
+        {
+            return packet_;
+        }
+    }
 }
