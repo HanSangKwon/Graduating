@@ -20,8 +20,12 @@ namespace UnityGame
 
             Debug.Log("받은 게임 패킷" + type);
             switch (type)
-            { 
-                // 패킷 타입에 따라 처리할 내용 작성하기!
+            {
+                case PacketType.E_S_ANS_INTO_ROOM:
+                    contents_.S_ANS_ENTER_GAME(packet);
+                    return;
+
+                    // 패킷 타입에 따라 처리할 내용 작성하기!
             }
 
             if (base.defaultRun(packet) == false)

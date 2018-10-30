@@ -312,8 +312,8 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Game.cs" />
     <Compile Include="Assets\Script\Game\Chatting\ChatWindow.cs" />
-    <Compile Include="Assets\Script\Game\Game\btn_game.cs" />
     <Compile Include="Assets\Script\Game\Game\MapInfo.cs" />
+    <Compile Include="Assets\Script\Game\Game\room.cs" />
     <Compile Include="Assets\Script\TCP\Chatting\ChattingContents.cs" />
     <Compile Include="Assets\Script\TCP\Chatting\ChattingNetWork.cs" />
     <Compile Include="Assets\Script\TCP\Chatting\ChattingPacketProcess.cs" />

@@ -3,59 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RoomManager : MonoBehaviour {
 
+namespace UnityGame
+{
 
-
-    List<User_> UserList = new List<User_>();
-    public GameObject IndexPanel, textObject;
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public void RegistUser(string text)
+    public class RoomManager : MonoBehaviour
     {
-        User_ newMessage = new User_();
-        newMessage.text = text;
 
-        GameObject newText = Instantiate(textObject, IndexPanel.transform);
-        newMessage.textObject = newText.GetComponent<Text>();
-        newMessage.textObject.text = newMessage.text;
-        UserList.Add(newMessage);
-    }
-
-    public void DeleteUser(string text)
-    {
-        User_ Target = new User_();
-
-        foreach(User_ chaild in UserList)
+        public void btnIntoRoom()
         {
-            if(chaild.text == text)
-            {
-                Target = chaild;
-            }
+            PK_C_REQ_INTO_ROOM packet_ = new PK_C_REQ_INTO_ROOM();
+
+            packet_.roomNum = 1;
+
+            GameObject.Find("GameNetWork").GetComponent<GameNetWork>().sendPacket(packet_);
         }
 
-        //삭제
-        //Destroy(UserList.Find( ) );
-        //UserList.Remove(Target);
-    
     }
-
-
-    [System.Serializable]
-    public class User_
-    {
-        public string text;
-        public Text textObject;
-    }
-
 
 }

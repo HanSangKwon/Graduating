@@ -22,7 +22,7 @@ public class MenuState : _StatesBase {
 
 	public override void OnUpdate ()
 	{
-		Debug.Log ("<color=yellow>Menu State</color> OnUpdate");
+		//Debug.Log ("<color=yellow>Menu State</color> OnUpdate");
 	}
 
 	#endregion
