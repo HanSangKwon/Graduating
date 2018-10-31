@@ -74,6 +74,9 @@ public class ShapeMovementController : MonoBehaviour {
 
                 // Clear filled horizontal lines
                 Managers.Grid.PlaceShape();
+
+                Managers.Grid.Updategraph(this.transform);
+
             }
 
             lastFall = Time.time;

@@ -23,6 +23,8 @@ public class GridManager : MonoBehaviour
 {
     //충돌체크
     public Column[] gameGridcol = new Column[10];
+    public int[,] graph = new int[10, 20];
+    public string graph_; 
 
     public bool InsideBorder(Vector2 pos)
     {
@@ -145,6 +147,25 @@ public class GridManager : MonoBehaviour
             {
                 Vector2 v = Vector2Extension.roundVec2(child.position);
                 gameGridcol[(int)v.x].row[(int)v.y] = child;
+            }
+        }
+    }
+
+    public void Updategraph(Transform obj)
+    {
+        for (int y = 0; y < 20; y++)
+        {
+            for (int x = 0; x < 10; x++)
+            {
+                if (gameGridcol[x].row[y] != null)
+                {
+                    graph[x, y] = 1;
+                }
+                else
+                    graph[x , y] = 0;
+
+
+                Debug.Log(graph[x,y]);
             }
         }
     }
